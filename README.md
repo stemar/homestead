@@ -1,6 +1,7 @@
 # Homestead
 
-Make a Vagrant box with Ubuntu 18.04 LAMP stack. Add patches for customizations.
+Make a Laravel-compatible Vagrant box with Ubuntu 18.04 LAMP stack.
+Add patches for customizations.
 
 - Host: Linux or Mac.
 
