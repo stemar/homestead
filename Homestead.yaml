@@ -1,0 +1,43 @@
+---
+ip: "192.168.10.10"
+memory: 3072
+cpus: 1
+provider: virtualbox
+
+copy:
+    - from: ~/.gitconfig
+      to: /home/vagrant
+    - from: ~/.ssh
+      to: /home/vagrant
+
+folders:
+    - map: ~/Web
+      to: /home/vagrant/Web
+
+sites:
+    - map: laravel.app.nevvix.com.localhost
+      to: /home/vagrant/Web/laravel.app.nevvix.com/public
+      type: "apache"
+
+databases:
+    - homestead
+
+features:
+    - docker: true
+    - mariadb: true
+    - webdriver: true
+
+ports:
+    - send: 8002
+      to: 80
+    - send: 44303
+      to: 443
+    - send: 33062
+      to: 3306
+      protocol: udp
+
+networks:
+    - type: "public_network"
+      bridge: "en0: Wi-Fi (AirPort)"
+
+backup: true
