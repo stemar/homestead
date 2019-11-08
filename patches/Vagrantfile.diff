@@ -1,0 +1,5 @@
+56a57,60
+> 
+>     if Vagrant.has_plugin?('vagrant-vbguest')
+>         config.vbguest.auto_update = false
+>     end

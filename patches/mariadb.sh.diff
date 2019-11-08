@@ -1,0 +1,7 @@
+42,43d41
+< debconf-set-selections <<< "mariadb-server mysql-server/root_password password secret"
+< debconf-set-selections <<< "mariadb-server mysql-server/root_password_again password secret"
+58c56
+< mysql --user="root" -e "GRANT ALL ON *.* TO root@'0.0.0.0' IDENTIFIED BY 'secret' WITH GRANT OPTION;"
+---
+> mysql --user="root" -e "GRANT ALL ON *.* TO root@'0.0.0.0' WITH GRANT OPTION;"
