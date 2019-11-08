@@ -61,7 +61,7 @@ but if I separate my VMs by LAMP stack in a dirtree, I can run, maintain and tro
 - I can have LAMP-specific `config` files to help the provision file.
 - `.vagrant` is created independently within each VM directory.
 - I can open separate tabs in my terminal, `cd` into separate VM dirtrees and `vagrant up`/`vagrant halt`
-  without having to write the machine name: `vagrant up ubuntu-18-04`/`vagrant halt ubuntu-18-04`
+  without having to write the machine name: `vagrant up homestead`/`vagrant halt homestead`
 - `vagrant global-status` still works as intended to see all VMs on the host machine.
 - I change the HTTP and MySQL ports in `Vagrantfile` to avoid collisions and Vagrant errors at provisioning.
 
