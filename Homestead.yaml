@@ -11,12 +11,12 @@ copy:
       to: /home/vagrant
 
 folders:
-    - map: ~/Web
-      to: /home/vagrant/Web
+    - map: ~/Code
+      to: /home/vagrant/Code
 
 sites:
     - map: laravel.app.nevvix.com.localhost
-      to: /home/vagrant/Web/laravel.app.nevvix.com/public
+      to: /home/vagrant/Code/laravel.app.nevvix.com/public
       type: "apache"
 
 databases:
